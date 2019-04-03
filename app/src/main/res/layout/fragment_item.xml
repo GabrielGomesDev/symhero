@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/symbaroum_bg"
+    tools:context=".Activity.ItemFragment">
+
+    <ImageView
+        android:id="@+id/itemLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/items_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="ITEMS"
+        android:textSize="18sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemLogo" />
+
+    <TextView
+        android:id="@+id/itemsHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Purchase your adventuring gear."
+        app:fontFamily="@font/baskervilleitalicbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsTitle" />
+
+    <ListView
+        android:id="@+id/itemsListView"
+        android:layout_width="146dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:divider="#d2a679"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical"
+        app:fontFamily="@font/baskervilleitalicbt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsHelp" />
+
+    <ListView
+        android:id="@+id/inventoryListView"
+        android:layout_width="146dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_weight="1"
+        android:divider="#d2a679"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical"
+        app:fontFamily="@font/baskervilleitalicbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsHelp" />
+
+    <TextView
+        android:id="@+id/ItemListHeader"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Inventory"
+        android:textSize="15sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintBottom_toTopOf="@+id/inventoryListView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/itemListTv"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ItemList"
+        android:textSize="15sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintBottom_toTopOf="@+id/itemsListView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fundsTv"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="30dp"
+        android:text="Funds:"
+        android:textSize="16sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintEnd_toEndOf="@+id/itemsListView"
+        app:layout_constraintTop_toBottomOf="@+id/itemsListView" />
+
+    <TextView
+        android:id="@+id/characterFundsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/background_light"
+        android:textSize="16sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintStart_toStartOf="@+id/inventoryListView"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryListView" />
+
+    <ImageView
+        android:id="@+id/finishCreationBtn"
+        android:layout_width="109dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/botaosave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

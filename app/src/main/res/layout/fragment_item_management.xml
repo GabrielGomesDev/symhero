@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/symbaroum_bg"
+    tools:context=".Activity.ItemManagement">
+
+    <ImageView
+        android:id="@+id/itemLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/items_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="INVENTORY"
+        android:textSize="20sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemsHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Manage you inventory."
+        app:fontFamily="@font/baskervilleitalicbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsTitle" />
+
+    <ListView
+        android:id="@+id/itemsListView"
+        android:layout_width="146dp"
+        android:layout_height="265dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="90dp"
+        android:layout_weight="1"
+        android:divider="#d2a679"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical"
+        app:fontFamily="@font/baskervilleitalicbt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsHelp" />
+
+    <ListView
+        android:id="@+id/inventoryListView"
+        android:layout_width="146dp"
+        android:layout_height="264dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_weight="1"
+        android:divider="#d2a679"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="vertical"
+        app:fontFamily="@font/baskervilleitalicbt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsHelp" />
+
+    <TextView
+        android:id="@+id/ItemListHeader"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Inventory"
+        android:textSize="15sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintBottom_toTopOf="@+id/inventoryListView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/itemListTv"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ItemList"
+        android:textSize="15sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintBottom_toTopOf="@+id/itemsListView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/fundsTv"
+        android:layout_width="44dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="44dp"
+        android:text="Funds:"
+        android:textSize="16sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintEnd_toEndOf="@+id/itemsListView"
+        app:layout_constraintTop_toBottomOf="@+id/itemsListView" />
+
+    <TextView
+        android:id="@+id/characterFundsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="44dp"
+        android:background="@android:color/background_light"
+        android:textSize="16sp"
+        app:fontFamily="@font/baskervillebt"
+        app:layout_constraintStart_toStartOf="@+id/inventoryListView"
+        app:layout_constraintTop_toBottomOf="@+id/inventoryListView" />
+
+    <ImageView
+        android:id="@+id/sheetTabBtn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/botao_character"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/spellsTabBtn"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/botao_spells"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
